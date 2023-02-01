@@ -103,6 +103,5 @@ console.log(compiled);
 errorHandling(compiled);
 writeOutput(compiled, buildPath);
 
-//module.exports = solc.compile(source, 1).contracts[":Inbox"];
 
 //console.log(JSON.parse(solc.compile((JSON.stringify(source)))));
