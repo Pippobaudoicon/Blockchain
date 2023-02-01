@@ -8,12 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pippobaudoicon/blockchain.git"
+    "url": "git+https://github.com/Pippobaudoicon/Blockchain.git"
   },
   "author": "Pippobaudoicon",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Pippobaudoicon/blockchain/issues"
+    "url": "https://github.com/Pippobaudoicon/Blockchain/issues"
   },
-  "homepage": "https://github.com/Pippobaudoicon/blockchain#readme"
+  "homepage": "https://github.com/Pippobaudoicon/Blockchain#readme",
+  "dependencies": {
+    "fs-extra": "^11.1.0",
+    "ganache": "^7.7.3",
+    "ganache-cli": "^6.12.2",
+    "mocha": "^10.2.0",
+    "path": "^0.12.7",
+    "solc": "^0.8.6",
+    "web3": "^1.8.1"
+  }
 }
