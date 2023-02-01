@@ -15,7 +15,7 @@ function createConfiguration() {
     return {
         language: 'Solidity',
         sources: {
-            'Inbox.sol': {
+            'Inbox': {
                 content: fs.readFileSync(path.resolve(__dirname, 'contracts', 'Inbox.sol'), 'utf8')
             },/*
             'AnotherFileWithAContractToCompile.sol': {
@@ -100,8 +100,8 @@ const buildPath = compilingPreparations();
 const config = createConfiguration();
 const compiled = compileSources(config);
 console.log(compiled);
+//console.log(config);
 errorHandling(compiled);
 writeOutput(compiled, buildPath);
-
 
 //console.log(JSON.parse(solc.compile((JSON.stringify(source)))));

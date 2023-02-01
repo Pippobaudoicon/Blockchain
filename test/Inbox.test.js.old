@@ -1,0 +1,28 @@
+const assert = require('assert');
+const ganache = require('ganache');
+const Web3 = require('web3');
+const web3 = new Web3(ganache.provider());
+
+class Car {
+    park() {
+        return 'Stopped';
+    }
+
+    drive() {
+        return 'Sktttt'
+    }
+}
+
+let car;
+beforeEach(() => {
+    car = new Car();
+})
+describe('Ferrari', () => {
+    it('can park', () => {
+        assert.equal(car.park(), 'Stopped');
+    })
+
+    it('can drive', () => {
+        assert.equal(car.drive(), 'Sktttt');
+    })
+})
