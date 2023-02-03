@@ -103,5 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-# remix compiled code
+# remix/mine compiled code
 artifacts/
+build/
