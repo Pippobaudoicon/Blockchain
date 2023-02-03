@@ -12,9 +12,5 @@ contract Inbox{
     function setMessage(string memory newMessage) public{
         message = newMessage;
     }
-    
-    function viewMessage() public view returns (string memory){
-        return message;
-    }
 
 }
